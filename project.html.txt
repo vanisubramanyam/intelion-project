@@ -1,0 +1,62 @@
+
+import React from "react";
+import "./App.css";
+
+function App() {
+  return (
+    <div className="App">
+      <header className="header">
+        <nav className="navbar">
+          <div className="navbar-logo">
+            <h1>Intelion</h1>
+          </div>
+          <ul className="navbar-links">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section className="hero" id="home">
+        <div className="hero-content">
+          <h2>Welcome to Intelion</h2>
+          <p>Empowering businesses with intelligent solutions.</p>
+          <button className="cta-button">Learn More</button>
+        </div>
+      </section>
+
+      <section className="about" id="about">
+        <h3>About Intelion</h3>
+        <p>Intelion provides smart solutions for modern businesses.</p>
+      </section>
+
+      <section className="services" id="services">
+        <h3>Our Services</h3>
+        <div className="service-item">
+          <h4>AI Solutions</h4>
+          <p>Enhancing decision-making with AI.</p>
+        </div>
+        <div className="service-item">
+          <h4>Cloud Integration</h4>
+          <p>Seamless cloud services.</p>
+        </div>
+      </section>
+
+      <footer className="footer" id="contact">
+        <p>&copy; {new Date().getFullYear()} Intelion. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
